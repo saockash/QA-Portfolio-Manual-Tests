@@ -76,6 +76,65 @@ Funcionalidade: Cadastro Completo de Aluno
       | .php     | Erro: Formato não permitido (apenas imagem) |
       | .gif     | Erro: Formato não permitido (apenas imagem) |
 
+   Esquema do Cenário: Validar o campo "1_bimestre"
+    Quando o usuário insere a "<1_bimestre>"
+    Então o sistema valida a regra "< mensagem_retorno   >"
+
+    Exemplos:
+      	| 1_bimestre          | mensagem_retorno               |
+	      | -1		              | ERRO Nota deve ser maior 0.00	 |
+	      | 0		                | SUCESSO			                   |
+	      | 0.1		              | SUCESSO			                   |
+	      | 0,1		              | ERRO formato numero		         |
+	      | 10		              | SUCESSO			                   |
+	      | 10.1		            | ERRO Nota deve ser menor 10.00 |
+        | <h1> Virus </h1>    | Erro: Formato inválido         |
+
+
+  Esquema do Cenário: Validar o campo "2_bimestre"
+    Quando o usuário insere a "<2_bimestre>"
+    Então o sistema valida a regra "< mensagem_retorno   >"
+
+    Exemplos:
+      	| 2_bimestre          | mensagem_retorno               |
+	      | -1		              | ERRO Nota deve ser maior 0.00	 |
+	      | 0		                | SUCESSO			                   |
+	      | 0.1		              | SUCESSO			                   |
+	      | 0,1		              | ERRO formato numero		         |
+	      | 10		              | SUCESSO			                   |
+	      | 10.1		            | ERRO Nota deve ser menor 10.00 |
+        | <h1> Virus </h1>    | Erro: Formato inválido         |
+
+
+
+  Esquema do Cenário: Validar o campo "3_bimestre"
+    Quando o usuário insere a "<3_bimestre>"
+    Então o sistema valida a regra "< mensagem_retorno   >"
+
+    Exemplos:
+      	| 3_bimestre        | mensagem_retorno               |
+	      | -1		            | ERRO Nota deve ser maior 0.00	 |
+	      | 0		              | SUCESSO			                   |
+	      | 0.1		            | SUCESSO			                   |
+	      | 0,1		            | ERRO formato numero		         |
+	      | 10		            | SUCESSO			                   |
+	      | 10.1		          | ERRO Nota deve ser menor 10.00 |
+        | <h1> Virus </h1>  | Erro: Formato inválido         |  
+
+  Esquema do Cenário: Validar o campo "4_bimestre"
+    Quando o usuário insere a "<4_bimestre>"
+    Então o sistema valida a regra "< mensagem_retorno   >"
+
+    Exemplos:
+      	| 4_bimestre        | mensagem_retorno               |
+	      | -1		            | ERRO Nota deve ser maior 0.00	 |
+	      | 0		              | SUCESSO			                   |
+	      | 0.1		            | SUCESSO			                   |
+	      | 0,1		            | ERRO formato numero		         |
+	      | 10		            | SUCESSO			                   |
+	      | 10.1		          | ERRO Nota deve ser menor 10.00 |
+        | <h1> Virus </h1>  | Erro: Formato inválido         |
+
 
 
       
