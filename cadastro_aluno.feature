@@ -1,7 +1,7 @@
 
 # language: pt
 # author: Claudio Hideo Kashiwakura
-# date: 2025-12-31
+# date: 2015-10-02
 
 Funcionalidade: Cadastro Completo de Aluno
   Como um administrador do sistema
@@ -51,12 +51,12 @@ Funcionalidade: Cadastro Completo de Aluno
 
     Exemplos:
       | data_nasc        | data_inicio       | data_fim         | mensagem_retorno                             |
-      | 01/01/2026       | 01/01/2025        | 01/01/2026       | Erro: Data de nascimento não pode ser futura |
-      | 01/01/1990       | 10/01/2025        | 01/01/2025       | Erro: Data fim não pode ser menor que início |
-      | <h1> Virus </h1> | 01/01/2025        | 01/01/2026       | Erro: Caracteres não permitidos              |         
-      | 01/01/1990       | <h1> Virus </h1>  | 01/01/2026       | Erro: Caracteres não permitidos              |        
-      | 01/01/1990       | 01/01/2025        | <h1> Virus </h1> | Erro: Caracteres não permitidos              |           
-      | 01/01/1990       | 01/01/2025        | 01/01/2026       | Sucesso                                      |
+      | 01/01/2016       | 01/01/2015        | 01/01/2016       | Erro: Data de nascimento não pode ser futura |
+      | 01/01/1990       | 10/01/2015        | 01/01/2015       | Erro: Data fim não pode ser menor que início |
+      | <h1> Virus </h1> | 01/01/2015        | 01/01/2016       | Erro: Caracteres não permitidos              |         
+      | 01/01/1990       | <h1> Virus </h1>  | 01/01/2016       | Erro: Caracteres não permitidos              |        
+      | 01/01/1990       | 01/01/2015        | <h1> Virus </h1> | Erro: Caracteres não permitidos              |           
+      | 01/01/1990       | 01/01/2015        | 01/01/2016       | Sucesso                                      |
 
   Esquema do Cenário: Upload de Arquivos (Apenas Imagem)
     Quando o usuário seleciona um arquivo com a extensão "<extensao>"
