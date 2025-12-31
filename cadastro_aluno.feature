@@ -148,7 +148,7 @@ Esquema do Cenário: Validar Cálculo da Média Final
       | 8.0  | 7.0  | 9.0  | 6.0  | 7.5            |
       | 0.0  | 0.0  | 0.0  | 0.0  | 0.0            |
 
-  Cenário: Validar que o campo Média Final não é editável (Read-only)
+Esquema do Cenário: Validar que o campo Média Final não é editável (Read-only)
     Dado que o sistema calculou a média final do aluno
     Quando o usuário tenta clicar ou digitar no campo "Média Final"
     Então o sistema não deve permitir a edição do valor
