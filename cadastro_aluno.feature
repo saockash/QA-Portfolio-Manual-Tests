@@ -74,6 +74,7 @@ Funcionalidade: Cadastro Completo de Aluno
       | .pdf     | Erro: Formato não permitido (apenas imagem) |
       | .exe     | Erro: Formato não permitido (apenas imagem) |
       | .php     | Erro: Formato não permitido (apenas imagem) |
+      | .gif     | Erro: Formato não permitido (apenas imagem) |
 
 
 
