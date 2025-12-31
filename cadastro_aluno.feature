@@ -83,11 +83,11 @@ Funcionalidade: Cadastro Completo de Aluno
     Exemplos:
       	| 1_bimestre          | mensagem_retorno               |
 	    | -1		          | ERRO Nota deve ser maior 0.00	 |
-		| 0		          | SUCESSO			                   |
-	    | 0.1		              | SUCESSO			                   |
-	    | 0,1		              | ERRO formato numero		         |
-	    | 10		              | SUCESSO			                   |
-	    | 10.1		            | ERRO Nota deve ser menor 10.00 |
+		| 0		              | SUCESSO			                   |
+	    | 0.1		          | SUCESSO			                   |
+	    | 0,1		          | ERRO formato numero		         |
+	    | 10		          | SUCESSO			                   |
+	    | 10.1		          | ERRO Nota deve ser menor 10.00 |
         | <h1> Virus </h1>    | Erro: Formato inválido         |
 
 
