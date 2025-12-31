@@ -136,5 +136,23 @@ Funcionalidade: Cadastro Completo de Aluno
         | <h1> Virus </h1>  | Erro: Formato inválido         |
 
 
+Esquema do Cenário: Validar Cálculo da Média Final
+    Dado que o usuário inseriu as notas de todos os bimestres
+    Quando o sistema processa as notas "<n1>", "<n2>", "<n3>" e "<n4>"
+    Então a média final exibida deve ser "<media_esperada>"
+
+    Exemplos:
+      | n1   | n2   | n3   | n4   | media_esperada |
+      | 10.0 | 10.0 | 10.0 | 10.0 | 10.0           |
+      | 5.0  | 5.0  | 5.0  | 5.0  | 5.0            |
+      | 8.0  | 7.0  | 9.0  | 6.0  | 7.5            |
+      | 0.0  | 0.0  | 0.0  | 0.0  | 0.0            |
+
+  Cenário: Validar que o campo Média Final não é editável (Read-only)
+    Dado que o sistema calculou a média final do aluno
+    Quando o usuário tenta clicar ou digitar no campo "Média Final"
+    Então o sistema não deve permitir a edição do valor
+    E o campo deve apresentar o atributo visual de "Somente Leitura" (Disabled/Read-only)
+
 
       
